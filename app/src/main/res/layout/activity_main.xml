@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_Weather"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.teducn.cn.weatherforecast.ui.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/actionbar_Weather"
+            layout="@layout/include_actionbar_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/actionbar_Weather"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/realTime_Condition"
+                layout="@layout/include_realtime_layout" />
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/refresh_Weather"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_Weather"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </android.support.v4.widget.SwipeRefreshLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout_ChartLine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/actionbar_Weather"
+            android:background="#ff000000"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_View"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/weather_header_layout"
+        app:menu="@menu/weather_menu" />
+</android.support.v4.widget.DrawerLayout>

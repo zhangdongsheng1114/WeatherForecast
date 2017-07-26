@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:gravity="center_vertical"
+    android:weightSum="4">
+
+    <ImageView
+        android:id="@+id/imageView_Weather_Condition"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/lotcloudy" />
+
+    <TextView
+        android:id="@+id/textView_Weather_Condition"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical|left"
+        android:text="晴"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView_Weather_Temp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="35/21"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView_Weather_Week"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="星期二"
+        android:textSize="18sp" />
+</LinearLayout>

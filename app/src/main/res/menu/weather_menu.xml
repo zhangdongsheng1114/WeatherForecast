@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/beijing"
+        android:icon="@drawable/ic_launcher"
+        android:title="北京" />
+    <item
+        android:id="@+id/shanghai"
+        android:icon="@drawable/ic_launcher"
+        android:title="上海" />
+    <item
+        android:id="@+id/guangzhou"
+        android:icon="@drawable/ic_launcher"
+        android:title="广州" />
+    <item
+        android:id="@+id/shenzhen"
+        android:icon="@drawable/ic_launcher"
+        android:title="深圳" />
+    <item
+        android:id="@+id/nanjing"
+        android:icon="@drawable/ic_launcher"
+        android:title="南京" />
+    <item
+        android:id="@+id/wuhan"
+        android:icon="@drawable/ic_launcher"
+        android:title="武汉" />
+    <item
+        android:id="@+id/zhengzhou"
+        android:icon="@drawable/ic_launcher"
+        android:title="郑州" />
+    <item
+        android:id="@+id/tianjin"
+        android:icon="@drawable/ic_launcher"
+        android:title="天津" />
+</menu>
